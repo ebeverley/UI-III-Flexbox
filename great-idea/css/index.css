@@ -1,7 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+ 
+/* http://meyerweb.com/eric/tools/css/reset/ */
    v2.0 | 20110126
    License: none (public domain)
-*/
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -18,7 +19,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+/* Set every element's box-sizing to border-box*/ 
 * {
     box-sizing: border-box;
 }
@@ -63,4 +63,41 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox /*
+*/
+body{
+	width:60%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+nav{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	justify-content:space-between;
+	align-content:center;
+}
+nav a{
+ color:gray;
+ text-decoration:none;
+ font-size:12px;
+ margin:auto;
+}
+.headersection{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+}
+.topsectioncontainer{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	justify-content:space-around;
+	margin:auto;
+}
+.features{
+	width:80%;
+}
+.about{
+	width:80%;
+}
